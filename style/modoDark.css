@@ -152,6 +152,6 @@ li{
         color: var(--black);
     }  
     #menuOpcoes li a:hover{
-        color: var(--white)
+        color: var(--white);
     }
 }
