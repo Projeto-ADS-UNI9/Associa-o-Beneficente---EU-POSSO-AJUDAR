@@ -154,4 +154,7 @@ li{
     #menuOpcoes li a:hover{
         color: var(--white);
     }
+    .dark #menuOpcoes li a:hover{
+        color: var(--black);
+    }
 }
