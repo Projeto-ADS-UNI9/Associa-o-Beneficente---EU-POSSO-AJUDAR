@@ -16,6 +16,8 @@ Descrição do projeto: </br>
 O site foi desenvolvido para uma ONG real ou fictícia, criamos ele buscando representar as principais informações e atividades de uma organização desse tipo. </br>
 O site é fictício, mas usamos como base do projeto uma associação real que realiza ações semelhantes, e buscamos representar fielmente os serviços que são prestados por organições desse tipo. </br>
 Tecnologias usadas: HTML, CSS e JavaScript. </br></br>
+Link do Site: </br>
+https://projeto-ads-uni9.github.io/AssociacaoBeneficenteEuPossoAjudar/ </br>
 Link do vídeo: </br>
 https://youtu.be/GzmTFxGZn5o </br>
 
