@@ -1,0 +1,154 @@
+@charset "UTF-8";
+*{font-family: Arial, Helvetica, sans-serif;}
+:root{
+    --azulNuvemLogo: rgba(39, 255, 219, 0.3);
+    --azulFonteLogo: rgba(11, 43, 45, 0.7);
+    --backgroundDark: rgba(0, 0, 0); 
+    --backgroundligth: rgba(238, 238, 238);
+    --textoPreto:rgba(0, 0, 0);
+    --textoBranco: rgba(255, 255, 255, 0.8);
+    --sombra: rgba(0, 0, 0, 0.3);
+    --sombraBranca: rgba(255, 255, 255, 0.3);
+    --linkVisitado: #d8709305;
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+}
+body.dark{
+    background-color: var(--backgroundDark);
+    transition: .7;
+} 
+.trilho.dark{
+    background-color: var(--black);
+    border:2px solid var(--white);
+}
+.trilho.dark .indicador{
+    background-color: var(--white);
+}
+body.dark h1{
+    color: var(--textoBranco);
+    text-shadow: 3px 3px 5px var(--sombraBranca);
+}
+body.dark h2{
+    color: var(--azulNuvemLogo);
+    text-shadow: 3px 3px 7px var(--sombraBranca);
+}
+body.dark h3{
+    color: var(--azulNuvemLogo);
+    text-shadow: 3px 3px 7px var(--sombraBranca);
+    font-size: 1.5em;
+}
+body.dark p{
+    color: var(--textoBranco);
+}
+body.dark a{
+    color: var(--textoBranco);
+}
+body.dark li{
+    color: var(--textoBranco);
+    border-bottom:1px solid var(--sombraBranca);
+}
+body.dark #menuButton{
+    border: 2px solid var(--white);
+}
+body.dark #menuButton img{
+    background-color: var(--white);
+}
+body.dark #botao-Voltar{
+    color: var(--white);
+    background-color:var(--black);
+    text-decoration: none;
+}
+body.dark #botao-Voltar img{
+    border: 2px solid var(--white);
+    background-color: var(--white);
+}
+.dark p a:visited{
+    color: var(--linkVisitado);
+}
+.dark .divisao{
+    border-top: 1px solid var(--sombraBranca) ;
+}
+body{
+    background-color: var(--backgroundligth);
+    color: var(--textoPreto);
+}
+body h1{
+    color: var(--textoPreto);
+    text-shadow: 3px 3px 5px var(--sombra);
+}
+body h2{
+    color: var(--azulFonteLogo);
+    text-shadow: 3px 3px 5px var(--sombra);
+}
+body p{
+    color: var(--textoPreto);
+}
+body a{
+    color: var(--textoPreto);
+}
+body li{
+    color: var(--textoPreto);
+    border-bottom: 1px solid var(--sombra);
+}
+p a:visited{
+    color: var(--linkVisitado);
+}
+/*menu*/
+body.dark #areaServicos{
+    color: var(--white);
+}
+li>a:visited{
+    color: var(--linkVisitado);
+}
+.dark li>a:visited{
+    color: var(--linkVisitado);
+}
+.dark li{
+    border: 1px solid var(--sombraBranca);
+}
+a{
+    color: var(--black);
+}
+li{
+    border: 1px solid var(--sombra);
+    border-radius: 10px;
+}
+.logoRedeSocial{
+    background-color: white;
+    border-radius: 50%;
+}
+.dark .logoRedeSocial{
+    background-color: white;
+    border-radius: 50%;
+}
+@media screen and (min-width: 1001px){
+    li a:hover{
+        background-color: var(--black);
+        padding: 10px;
+        border-radius: 10px;  
+    }
+    .dark a:hover{
+        background-color: var(--white);
+        padding: 10px;
+        border-radius: 10px;  
+        color: var(--black);
+    }
+    p a:hover{
+        background-color: var(--black);
+        padding: 10px;
+        border-radius: 10px; 
+        color: var(--white); 
+    }
+    .rodape a:hover{
+        background-color: var(--black);
+        padding: 10px;
+        border-radius: 10px; 
+        color: var(--white);
+    }
+    .dark .rodape a:hover{
+        background-color: var(--white);
+        padding: 10px;
+        border-radius: 10px; 
+        color: var(--black);
+    }  
+}

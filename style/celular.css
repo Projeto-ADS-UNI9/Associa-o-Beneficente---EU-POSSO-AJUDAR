@@ -1,0 +1,261 @@
+@charset "UTF-8";
+@font-face {
+    font-family: pollerOne;
+    src: url(../fonts/PollerOne-Regular.ttf);
+}
+@font-face {
+    font-family: croissantOne;
+    src: url(../fonts/CroissantOne-Regular.ttf);
+}
+:root{
+    --azulNuvemLogo: rgba(39, 255, 219, 0.3);
+    --azulFonteLogo: rgba(11, 43, 45, 0.7);
+    --backgroundDark: rgba(0, 0, 0); 
+    --backgroundligth: rgba(238, 238, 238);
+    --textoPreto:rgba(0, 0, 0);
+    --textoBranco: rgba(255, 255, 255, 0.8);
+    --sombra: rgba(0, 0, 0, 0.3);
+    --sombraBranca: rgba(255, 255, 255, 0.3);
+    --linkVisitado: #d8709305;
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+body{
+    width: 90vw;
+    transition: .7s;
+    margin-left: 5%;
+}
+header{
+    position: relative;
+    padding-bottom: 100px;
+}
+#posicaoMD{
+    position: absolute;
+    right: 1%;
+    top: 50%;
+}
+.trilho{
+    display: block;
+    width: 20px;
+    height: 10px;
+    background-color: var(--white);
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+    border: var(--black) solid 2px;
+}
+.indicador{
+    width: 10px;
+    height: 10px;
+    background-color: var(--black);
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition:.5s;    
+}
+.trilho.dark{
+    background-color: var(--black);
+    border:2px solid var(--white);
+}
+.trilho.dark .indicador{
+    left: 10px;
+    background-color: var(--white);
+}
+ #menuButton{
+    position: absolute;
+    top: 20%;
+    right: 1%;
+    cursor: pointer;
+    border: none;
+    border: 2px solid var(--black);   
+    border-radius: 50%;
+    padding: 2px;
+    background-color: var(--white);
+}
+#menuButton img{
+    width: 15px;
+    height: 15px;
+    display: grid;
+    place-items: center;
+}
+header h1{
+    position: absolute;
+    top: 10%;
+    margin: -10px 0px 0px 0px;
+    width: 90%;
+}
+#ab{
+    font-size: 0.4em;
+    font-family: croissantOne;
+}
+#epa{
+    font-size: 0.6em;
+    font-weight:bold;
+    font-family: croissantOne;
+}
+a{
+    font-size: 0.7em;
+    font-weight: bolder;
+}
+#logotipo img{
+    width: 100%;
+}
+h2{
+    font-family: pollerOne;
+    font-size: 1.7em;
+    font-weight: bolder;
+    text-align: center;
+}
+p{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-left: 15px;
+}
+li{
+    list-style-type: none;
+    margin: 2px;
+    padding: 10px;
+}
+/* Formatação do carrossel*/
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-track img {
+    width: 100%;
+    flex: 0 0 100%;
+    object-fit: cover;
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px ;
+}
+.divisao{
+    border-top: 2px solid var(--sombra) ;
+    margin: 50px 0;
+}
+.dark .divisao{
+    border-top: 2px solid var(--sombraBranca) ;
+}
+.rodape {
+    text-align: left;
+}
+footer a {
+    text-decoration: none;
+}
+footer p{
+    font-size: 1em;
+    padding: 5px; 
+}
+footer a img{
+    margin-bottom: -5px;
+}
+@media screen and (min-width: 481px) and (max-width: 800px){
+    header{
+        padding-bottom: 100px;
+    }
+    #ab{
+        font-size: 0.6em;    
+    }
+    #epa{
+        font-size: 1em;  
+    }
+    #menuButton{
+        top: 10%;
+        right: 5%;
+    }
+    #menuButton img{
+        width: 20px;
+        height: 20px;
+    }
+    #posicaoMD{
+        top: 45%;
+        right: 5%;
+    }
+    .trilho{
+        width: 30px;
+        height: 15px;
+    }
+    .indicador{
+        width: 15px;
+        height: 15px;  
+    }
+    .trilho.dark .indicador{
+        left: 15px;
+    }
+    a{
+        font-size: 0.6em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    li{
+        font-size: 1.2em;
+    }
+    .rodape {
+        text-align: left;
+        position: relative;
+    }
+    .rodape a{
+        font-size: .7em;
+        text-decoration: none;
+        padding: 5px;
+        text-align: left;
+        text-indent: -5px;
+    }
+    footer a img{
+        margin-bottom: -5px;
+    }
+    .rodapePosicao1{
+        position: absolute;
+        width: 50%;
+        left: 15%;
+        padding-top: 0%;
+        margin: -5px;
+    }
+    .rodapePosicao2{
+        position: absolute;
+        width: 50%;
+        right: 0%;
+        padding-top:0%;  
+    }
+    .rodapePosicao3{
+        position: absolute;
+        width: 50%;
+        left:15%;
+        padding-top: 0%; 
+        top: 200px;
+    }
+}
+
+
+
